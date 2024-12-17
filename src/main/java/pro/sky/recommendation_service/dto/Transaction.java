@@ -1,4 +1,4 @@
-package pro.sky.recommendation_service.DTO;
+package pro.sky.recommendation_service.dto;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -9,8 +9,8 @@ import java.util.UUID;
 @Accessors(chain = true)
 public class Transaction {
     private UUID id;
-    private UUID productId;
-    private UUID userId;
+    private Product product;
+    private User user;
     private String type;
-    private UUID amount;
+    private int amount;
 }
