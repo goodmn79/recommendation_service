@@ -1,13 +1,14 @@
-package pro.sky.recommendation_service.Mapper;
+package pro.sky.recommendation_service.mapper;
 
 import org.springframework.jdbc.core.RowMapper;
-import pro.sky.recommendation_service.DTO.Product;
+import org.springframework.stereotype.Component;
+import pro.sky.recommendation_service.dto.Product;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
 
-
+@Component
 public class ProductMapper implements RowMapper<Product> {
     @Override
     public Product mapRow(ResultSet rs, int rowNum) throws SQLException {

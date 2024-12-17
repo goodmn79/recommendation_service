@@ -1,4 +1,4 @@
-package pro.sky.recommendation_service.DTO;
+package pro.sky.recommendation_service.dto;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
